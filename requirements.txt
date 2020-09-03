@@ -1,0 +1,4 @@
+mysql.connector
+bs4
+beautifulsoup4
+lxml
