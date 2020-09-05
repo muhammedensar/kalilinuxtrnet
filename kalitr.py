@@ -85,9 +85,9 @@ def tablo_olustur(table_name,dbname):
         mydb.close()
 
 def veri_ekle(dbname,table, idi, baslik, yazar, kategori, yanit, gosterim, tarih):
-    mydb = mysql.connector.connect(user="ensar",
-                                   password="1234",
-                                   host="127.0.0.1",
+    mydb = mysql.connector.connect(user=mysql_username,
+                                   password=mysql_password,
+                                   host=mysql_hostname,
                                    database=dbname)
     cursor = mydb.cursor()
     sql = (
